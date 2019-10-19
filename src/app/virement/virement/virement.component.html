@@ -1,0 +1,74 @@
+<!-- Header -->
+<app-header></app-header>
+<div class="container-fluid">
+  <!-- Virement Form -->
+  <h1 class="h4 col-sm-4 mb-4 mt-5 offset-sm-1"><u>Virement compte à compte</u></h1>
+  <form>
+    <div class="container bg-light border border-dark py-5">
+      <div class="form-group row">
+        <label class="control-label col-sm-1 " for="client"><strong>Client</strong></label>
+        <select class="custom-select col-sm-4 ">
+          <option selected>Client à débiter</option>
+          <option value="1">Zineb Sids</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+        </select>
+      </div>
+      <br>
+      <!-- checkbox pour les comptes -->
+      <div class="form-group row">
+        <div class="custom-control custom-radio custom-control-inline col offset-sm-1">
+          <input type="radio" id="radioCompteCourant" name="radioCompteCourant" class="custom-control-input">
+          <label class="custom-control-label" for="radioCompteCourant">Compte Courant</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline col  offset-sm-1">
+          <input type="radio" id="radioCompteEpargne" name="radioCompteEpargne" class="custom-control-input">
+          <label class="custom-control-label" for="radioCompteEpargne">Compte Epargne</label>
+        </div>
+      </div>
+      <div class="form-group row">
+        <div class="col">
+          <label for="compteCourant"><strong>N°</strong></label>
+          <input required type="text" ngModel class="form-control" id="compteCourant" name="compteCourant"
+            placeholder="N° Compte Courant">
+        </div>
+        <div class="col">
+          <label for="compteEpargne"><strong>N°</strong></label>
+          <input required type="text" ngModel class="form-control" id="compteEpargne" name="compteEpargne"
+            placeholder="N° Compte Epargne">
+        </div>
+      </div>
+      <div class="form-group row">
+        <div class="col">
+          <label for="solde"><strong>Solde</strong></label>
+          <input required type="text" ngModel class="form-control" id="compteEpargne" name="compteEpargne"
+            placeholder="Solde">
+        </div>
+        <div class="col">
+          <label for="solde"><strong>Solde</strong></label>
+          <input required type="text" ngModel class="form-control" id="compteEpargne" name="compteEpargne"
+            placeholder="Solde">
+        </div>
+      </div>
+      <br>
+      <div class="form-group row col-sm-8 mx-auto">
+        <label class="control-label " for="virementVers"><strong>Virement vers : </strong></label>
+        <select class="custom-select">
+          <option selected>Client à créditer</option>
+          <option value="1">Zineb Sids</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+        </select>
+        <br><br>
+        <label class="control-label " for="transaction"><strong>Montant de la transaction : </strong></label>
+        <input required type="text" ngModel #nom="ngModel" class="form-control" id="transaction" name="transaction"
+          placeholder="Montant de la transaction" />
+      </div>
+      <!-- Bouton Valider -->
+      <div class="form-group">
+            <div class="mt-3  col-sm-3 offset-sm-10 ">
+              <button type="submit" class="btn btn-outline-secondary">Valider</button>
+            </div>
+          </div>
+    </div>
+  </form>

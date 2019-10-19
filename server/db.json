@@ -1,0 +1,85 @@
+{
+  "Client": [
+    {
+      "id": 3,
+      "nom": "Barlow",
+      "prenom": "Pierce",
+      "login": "Joanna",
+      "password": "Kinney"
+    },
+    {
+      "nom": "Sidelkhir",
+      "prenom": "Zineb",
+      "adresse": "Centre d’affaire Berrechid – Quartier NassrAllah",
+      "email": "ismail.norri.24@gmail.com",
+      "id": 6
+    },
+    {
+      "nom": "Sidelkhir",
+      "prenom": "Zineb",
+      "adresse": "Centre d’affaire Berrechid – Quartier NassrAllah",
+      "email": "warda_chafi@hotmail.com",
+      "id": 7
+    }
+  ],
+  "Conseiller": [
+    {
+      "id": 1,
+      "nom": "Lupe",
+      "prenom": "Malone",
+      "login": "Lopez",
+      "password": "Francesca"
+    },
+    {
+      "id": 2,
+      "nom": "Vonda",
+      "prenom": "Thornton",
+      "login": "Meredith",
+      "password": "Iva"
+    },
+    {
+      "id": 3,
+      "nom": "Barlow",
+      "prenom": "Pierce",
+      "login": "Joanna",
+      "password": "Kinney"
+    },
+    {
+      "id": 4,
+      "nom": "Carey",
+      "prenom": "Lopez",
+      "login": "Angelina",
+      "password": "Aline"
+    },
+    {
+      "id": 5,
+      "nom": "Garza",
+      "prenom": "Alexander",
+      "login": "Spence",
+      "password": "Moses"
+    }
+  ],
+  "Gerant": [
+    {
+      "id": 1,
+      "nom": "Day",
+      "prenom": "Brady",
+      "login": "Sheri",
+      "password": "Ewing"
+    },
+    {
+      "id": 2,
+      "nom": "Luz",
+      "prenom": "Rhodes",
+      "login": "Tasha",
+      "password": "Cline"
+    },
+    {
+      "id": 3,
+      "nom": "Liliana",
+      "prenom": "Battle",
+      "login": "Nadia",
+      "password": "Felicia"
+    }
+  ]
+}

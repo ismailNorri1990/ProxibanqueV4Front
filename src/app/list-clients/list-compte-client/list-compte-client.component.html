@@ -1,0 +1,51 @@
+<!-- Header -->
+<app-header></app-header>
+<div class="container-fluid">
+        <!-- Virement Form -->
+        <form>
+            <div class="form-group row">
+              <label class="control-label h4 col-sm-4 mb-4 mt-5 " for="client"><strong><u>Consulter les comptes de :</u> </strong></label>
+              <select class="custom-select col-sm-4 mb-4 mt-5">
+                <option selected>Client</option>
+                <option value="1">Zineb Sids</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+  <form>
+    <div class="container bg-light border border-dark py-5">
+      <div class="form-group row">
+      <div class="col">
+        <h3 class="h6 offset-sm-1">Compte Courant</h3>
+      </div>
+      <div class="col">
+        <h3 class="h6  offset-sm-1">Compte Epargne </h3>
+      </div>
+      </div>
+      <div class="form-group row">
+        <div class="col">
+          <label for="compteCourant"><strong>N°</strong></label>
+          <input required type="text" ngModel class="form-control" id="compteCourant" name="compteCourant"
+            placeholder="N° Compte Courant">
+        </div>
+        <div class="col">
+          <label for="compteEpargne"><strong>N°</strong></label>
+          <input required type="text" ngModel class="form-control" id="compteEpargne" name="compteEpargne"
+            placeholder="N° Compte Epargne">
+        </div>
+      </div>
+      <div class="form-group row">
+        <div class="col">
+          <label for="solde"><strong>Solde</strong></label>
+          <input required type="text" ngModel class="form-control" id="compteEpargne" name="compteEpargne"
+            placeholder="Solde">
+        </div>
+        <div class="col">
+          <label for="solde"><strong>Solde</strong></label>
+          <input required type="text" ngModel class="form-control" id="compteEpargne" name="compteEpargne"
+            placeholder="Solde">
+        </div>
+      </div>
+    </div>
+  </form>
+

@@ -1,0 +1,64 @@
+<!-- Formulaire client -->
+<app-header></app-header>
+<!--Création client-->
+<h1 class="h4 col-sm-4 mb-4 mt-5 offset-sm-1"><u>Nouveau client:</u></h1>
+<form>
+  <div class="container bg-light border border-dark py-5">
+    <div class="form-group row">
+      <div class="col">
+        <h3 class="h6  offset-sm-1">Informations personnelles : </h3>
+      </div>
+      <div class="col">
+        <h3 class="h6  offset-sm-2">Compte Courant </h3>
+      </div>
+    </div>
+    <div class="row mb-3">
+      <label class="control-label col-md-1" for="nom"><strong>Nom</strong></label>
+      <div class="col">
+        <input required type="text" [(ngModel)]="client.nom" class="form-control" id="nom" name="nom" placeholder="nom" />
+      </div>
+      <label class="control-label col-md-1" for="solde"><strong>Solde</strong></label>
+      <div class="col">
+        <input required type="text"  class="form-control" id="solde" name="solde" min="20"
+          placeholder="20" />
+      </div>
+    </div>
+
+    <div class="form-group row">
+      <label class="control-label col-sm-1" for="prenom"><strong>Prenom</strong></label>
+      <div class="col-sm-3">
+        <input required type="text" [(ngModel)]="client.prenom" class="form-control" id="prenom" name="prenom" placeholder="prenom">
+      </div>
+
+      <div class="custom-control custom-checkbox mb-6 offset-sm-3">
+          <label class="custom-control-label h6 " for="compte_epargne_checkbox">Compte Epargne</label>
+        <input class="custom-control-input" type="checkbox" id="compte_epargne_checkbox">
+
+      </div>
+    </div>
+    <div class="row mb-3">
+      <label class="control-label col-sm-1" for="adresse"><strong>Adresse</strong></label>
+      <div class="col">
+        <input required type="text" [(ngModel)]="client.adresse" class="form-control" id="adresse" name="adresse" placeholder="adresse" />
+      </div>
+      <label class="control-label col-sm-1" for="solde"><strong>Solde</strong></label>
+      <div class="col">
+        <input required type="text" ngModel #nom="ngModel" class="form-control" id="solde" name="solde"
+          placeholder="solde" />
+      </div>
+    </div>
+    <div class="form-group row">
+      <label class="control-label col-sm-1" for="email"><strong>Email</strong></label>
+      <div class="col-sm-3">
+        <input required type="email" [(ngModel)]="client.email" class="form-control" id="email" name="email" placeholder="email">
+      </div>
+    </div>
+
+  </div>
+  <div class="form-group">
+    <div class="mt-3  col-sm-3 offset-sm-9 ">
+      <button type="submit" (click)="creerClient()" class="btn btn-outline-secondary">Valider</button>
+    </div>
+  </div>
+
+</form>

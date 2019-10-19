@@ -1,0 +1,40 @@
+<!-- Formulaire conseiller -->
+<app-header></app-header>
+<!--Création conseiller-->
+<h1 class="h4 col-sm-4 mb-4 mt-5 offset-sm-1"><u>Nouveau conseiller:</u></h1>
+<form>
+  <div class="container bg-light border border-dark py-5">
+    <div class="form-group row mb-3">
+      <label class="control-label col-md-1" for="nom"><strong>Nom</strong></label>
+      <div class="col-sm-5">
+        <input required type="text" [(ngModel)]="conseiller.nom" class="form-control" id="nom" name="nom" placeholder="nom" />
+      </div>
+    </div>
+
+    <div class="form-group row mb-3">
+      <label class="control-label col-sm-1" for="prenom"><strong>Prenom</strong></label>
+      <div class="col-sm-5">
+        <input required type="text" [(ngModel)]="conseiller.prenom" class="form-control" id="prenom" name="prenom" placeholder="prenom">
+      </div>
+    </div>
+    <div class="form-group row mb-3">
+      <label class="control-label col-sm-1" for="adresse"><strong>Adresse</strong></label>
+      <div class="col-sm-5">
+        <input required type="text" [(ngModel)]="conseiller.adresse" class="form-control" id="adresse" name="adresse" placeholder="adresse" />
+      </div>
+    </div>
+    <div class="form-group row mb-3">
+      <label class="control-label col-sm-1" for="email"><strong>Email</strong></label>
+      <div class="col-sm-5">
+        <input required type="email" [(ngModel)]="conseiller.email" class="form-control" id="email" name="email" placeholder="email">
+      </div>
+    </div>
+
+  </div>
+  <div class="form-group">
+    <div class="mt-3  col-sm-3 offset-sm-9 ">
+      <button type="submit" (click)="creerConseiller()" class="btn btn-outline-secondary">Valider</button>
+    </div>
+  </div>
+
+</form>
